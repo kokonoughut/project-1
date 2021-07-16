@@ -31,7 +31,7 @@ def getWeather(window):
         icon_image = ImageTk.PhotoImage(Image.open(BytesIO(icon_data)))
         
 
-
+        #country icons
         cicons_url = f"https://www.countryflags.io/{response_data['sys']['country']}/shiny/64.png"
         cicon_response = requests.get(cicons_url)
         cicon_data = cicon_response.content
